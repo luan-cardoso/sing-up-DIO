@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header'
+import Title from './components/Title/Title';
+import Form from './components/Form/Form';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='main'>
+        <Title
+          title='A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas.'
+        />
+        <Form/>
+      </div>
+      
     </div>
   );
 }
